@@ -36,8 +36,12 @@ julia> for i in 2:10
            write(logger, value1=i)
        end
 
-julia>
-
+# `wandb` has custom types for various data types
+# such as images, audio, dataframes, etc.
+# Typically you can pass the equivalent Julia type into 
+# the function and it'll work as you would expect.
+#
+# Reference: https://docs.wandb.com/library/log
 julia> img = wandb.Image(rand(1:255, 255, 255, 3))
 PyObject <wandb.data_types.Image object at 0x7fb6e667aa10>
 
@@ -45,9 +49,3 @@ julia> write(logger, myimg=img)
 ```
 
 You can see the output for the logs for the sample above project [here](https://app.wandb.ai/domluna/my-project?workspace=user-domluna).
-
-### Additional Reference
-
-`wandb` implements its own types for various data structures such as images, audio, data tables, etc.
-Details on how to log these types can be found [here](https://docs.wandb.com/library/log). Usaully you
-can pass the equivalent Julia type into the function and it'll work as you would expect.
