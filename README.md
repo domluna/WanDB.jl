@@ -1,6 +1,6 @@
 # WanDB.jl
 
-Provides a lightweight wrapper around the official Python API for [Weights & Biases](https://www.wandb.com/).
+Lightweight wrapper of the official Python API for [Weights & Biases](https://www.wandb.com/).
 
 ### Quickstart
 
