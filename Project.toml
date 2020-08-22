@@ -1,0 +1,7 @@
+name = "WanDB"
+uuid = "643500a1-c6f5-4f87-81f7-ee27f90c06b0"
+authors = ["Dominique Luna <dluna132@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
